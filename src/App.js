@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Directory from "./pages/Directory";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="app-shell">
+      <header className="app-header">
+        <h1>Employee Directory - Penthara Technologies</h1>
       </header>
+      <main className="app-main">
+        <Directory />
+      </main>
+      <footer className="app-footer">© {new Date().getFullYear()} • Made by - Mudit Vashistha</footer>
     </div>
   );
 }
-
-export default App;
